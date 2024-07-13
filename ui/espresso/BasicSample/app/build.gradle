@@ -6,7 +6,7 @@ android {
     compileSdk 33
     defaultConfig {
         applicationId "com.example.android.testing.espresso.BasicSample"
-        minSdkVersion 14
+        minSdkVersion 19
         targetSdkVersion 33
         versionCode 1
         versionName "1.0"
@@ -67,4 +67,9 @@ dependencies {
     testImplementation "androidx.test.espresso:espresso-core:" + rootProject.espressoVersion
     testImplementation "androidx.test.espresso:espresso-intents:" + rootProject.espressoVersion
     testImplementation "androidx.test.ext:truth:" + rootProject.extTruthVersion
+
+    // Espresso dependencies
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+    androidTestImplementation 'androidx.test:runner:1.6.1'
+    androidTestImplementation 'androidx.test:rules:1.6.1'
 }
